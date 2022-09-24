@@ -219,15 +219,8 @@
       <string>uni16F8</string>
       <string>uni0323</string>
     </array>
-    <key>public.postscriptNames</key>
-    <dict>
-      <key>NULL</key>
-      <string>uni0000</string>
-    </dict>
-
     <key>public.openTypeCategories</key>
     <dict>
-
       <key>.notdef</key>
       <string>base</string>
       <key>CR</key>
@@ -238,6 +231,8 @@
       <string>base</string>
       <key>uni00A0</key>
       <string>base</string>
+      <key>uni0323</key>
+      <string>mark</string>
       <key>uni16A0</key>
       <string>base</string>
       <key>uni16A1</key>
@@ -416,8 +411,13 @@
       <string>base</string>
       <key>uni16F8</key>
       <string>base</string>
-      <key>uni0323</key>
-      <string>mark</string>
+      <key>uni25CC</key>
+      <string>base</string>
+    </dict>
+    <key>public.postscriptNames</key>
+    <dict>
+      <key>NULL</key>
+      <string>uni0000</string>
     </dict>
   </dict>
 </plist>
