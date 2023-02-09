@@ -73,30 +73,35 @@
             </tr>
             <tr>
                 <td>0</td>
-                <td>0</td>
-                <td>4</td>
-                <td>111</td>
+                <td>1</td>
+                <td>5</td>
+                <td>117</td>
                 <td>7</td>
-                <td>105</td>
+                <td>110</td>
             </tr>
             <tr>
                 <td>0%</td>
-                <td>0%</td>
-                <td>2%</td>
-                <td>66%</td>
+                <td>1%</td>
+                <td>3%</td>
+                <td>68%</td>
                 <td>4%</td>
-                <td>62%</td>
+                <td>64%</td>
             </tr>
             </table>
             
 <p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
-<h2>&lt;Section: Google Fonts&gt; ⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
+<h2>&lt;Section: Google Fonts&gt; 🔥⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
 <h3>Ensure fonts have ScriptLangTags declared on the 'meta' table.</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/meta/script_lang_tags&gt;</div>
 
 <details><summary>⚠️ <strong>fonts/NotoSansRunic/googlefonts/ttf/NotoSansRunic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
 </span></li></ul></div></details>
-<h2>&lt;Section: Universal&gt; ⚠️⚠️⏩⏩⏩⏩ℹ️ℹ️</h2>
+<h3>Noto fonts must have an ARTICLE.en_us.html file</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/noto_has_article&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoSansRunic/googlefonts/ttf/NotoSansRunic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Universal&gt; ⚠️⚠️⚠️⏩⏩⏩⏩⏩ℹ️ℹ️</h2>
 <h3>Check font contains no unreachable glyphs</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
 
@@ -116,9 +121,18 @@
 
 - Glyph name: aogonek	Contours detected: 3	Expected: 2 
 
-- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+- Glyph name: uogonek	Contours detected: 2	Expected: 1
 </code></pre>
 <p>[code: contour-count]</p>
+</span></li></ul></div></details>
+<h3>Check math signs have the same width.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/math_signs_width&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoSansRunic/googlefonts/ttf/NotoSansRunic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The most common width is 572 among a set of 6 math glyphs.
+The following math glyphs have a different width, though:</p>
+<p>Width = 322:
+minus
+[code: width-outliers]</p>
 </span></li></ul></div></details>
 <h2>&lt;Section: Outline Correctness Checks&gt; ⚠️</h2>
 <h3>Are any segments inordinately short?</h3>
@@ -145,7 +159,7 @@
 
 * W (U+0057) contains a short segment B&lt;&lt;468.0,577.5&gt;-&lt;463.0,600.0&gt;-&lt;461.0,609.0&gt;&gt; 
 
-* And 81 more.
+* 80 more.
 </code></pre>
 <p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
 </span></li></ul></div></details>
